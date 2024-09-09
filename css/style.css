@@ -17,7 +17,7 @@
 }
 
 /**********************************
-*   Reusable components
+*   Reusable Classes
 **********************************/
 
 .flex {
@@ -42,6 +42,10 @@
 
 .mb24 {
     margin-bottom: 2.4rem;
+}
+
+.mt64 {
+    margin-top: 6.4rem;
 }
 
 .mb64 {
@@ -87,6 +91,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grid-right {
+    justify-self: end;
 }
 
 /**********************************
@@ -144,3 +152,18 @@ body {
     background: var(--purple-hover);
 }
 
+#sub-section {
+    padding: 0 3.2rem;
+}
+
+#img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-items: center; */
+    gap: 1.6rem;
+}
+
+.img-group {
+    height: 14.4rem;
+    border-radius: 10px;
+}
