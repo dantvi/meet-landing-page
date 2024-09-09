@@ -11,6 +11,7 @@
     --purple-hover: hsl(268, 55%, 71%);
     --purple-300: hsl(268, 100%, 86%);
     --purple-600: hsl(268, 34%, 53%);
+    --slate-300: hsl(240, 18%, 85%);
     --slate-600: hsl(240, 10%, 57%);
     --slate-900: hsl(240, 21%, 20%);
 }
@@ -43,6 +44,10 @@
     margin-bottom: 2.4rem;
 }
 
+.mb64 {
+    margin-bottom: 6.4rem;
+}
+
 .btn {
     font-size: 1.6rem;
     font-weight: 600;
@@ -63,6 +68,25 @@
 
 .btn-small {
     width: 16.1rem;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 80px;
+    background: var(--slate-300);
+    margin: 0 auto;
+}
+
+.numbered-circle {
+    border: 1px solid var(--slate-300);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /**********************************
