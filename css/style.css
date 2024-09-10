@@ -238,3 +238,54 @@ footer {
         justify-self: center;
     }
 }
+
+/* Media Query - Tablets */
+@media screen and (min-width: 768px) {
+    .hero-image {
+        height: auto;
+    }
+
+    #content {
+        margin: 7.2rem auto;
+        margin-bottom: 12rem;
+        max-width: 45rem;
+    }
+
+    #content h1 {
+        font-size: 4.8rem;
+    }
+
+    .btn-container {
+        flex-direction: row;
+        gap: 1.7rem;
+    }
+
+    .btn-cyan {
+        margin: 0;
+    }
+
+    #img-container {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        max-width: 68rem;
+    }
+
+    .img-group {
+        justify-self: center;
+    }
+
+    .info-container {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .info-container h2 {
+        font-size: 3.6rem;
+        padding: 0 3rem;
+    }
+
+    #footer-content p {
+        max-width: 50rem;
+        margin: 2.4rem auto;
+    }
+}
