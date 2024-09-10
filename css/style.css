@@ -1,3 +1,114 @@
+/**********************************
+*   Colors and fonts
+**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 98%);
+    --cyan-hover: hsl(192, 54%, 64%);
+    --cyan-300: hsl(192, 90%, 77%);
+    --cyan-600: hsl(192, 37%, 48%);
+    --purple-hover: hsl(268, 55%, 71%);
+    --purple-300: hsl(268, 100%, 86%);
+    --purple-600: hsl(268, 34%, 53%);
+    --slate-300: hsl(240, 18%, 85%);
+    --slate-600: hsl(240, 10%, 57%);
+    --slate-900: hsl(240, 21%, 20%);
+}
+
+/**********************************
+*   Reusable Classes
+**********************************/
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    font-weight: 700;
+    line-height: 110%;
+    color: var(--slate-900);
+}
+
+.mb16 {
+    margin-bottom: 1.6rem;
+}
+
+.mt24 {
+    margin-top: 2.4rem;
+}
+
+.mb24 {
+    margin-bottom: 2.4rem;
+}
+
+.mt32 {
+    margin-top: 3.2rem;
+}
+
+.mb32 {
+    margin-bottom: 3.2rem;
+}
+
+.mt64 {
+    margin-top: 6.4rem;
+}
+
+.mb64 {
+    margin-bottom: 6.4rem;
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 29px;
+    border: none;
+    width: 19.3rem;
+    height: 5.6rem;
+    color: var(--white);
+}
+
+.btn-cyan {
+    background: var(--cyan-600);
+}
+
+.btn-purple {
+    background: var(--purple-600);
+}
+
+.btn-small {
+    width: 16.1rem;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 80px;
+    background: var(--slate-300);
+    margin: 0 auto;
+}
+
+.numbered-circle {
+    border: 1px solid var(--slate-300);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+}
+
+.grid-right {
+    justify-self: end;
+}
+
+/**********************************
+*   Generic CSS
+**********************************/
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -5,4 +116,125 @@ html {
 
 body {
     margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+    color: var(--slate-600);
+    background: var(--white);
+}
+
+#logo-container {
+    margin: 4.8rem 0 6.4rem 0;
+}
+
+.hero-image {
+    height: 16.0rem;
+    width: auto;
+}
+
+.hero-right {
+    display: none;
+}
+
+#content {
+    margin: 4.8rem 3.5rem 6.4rem 3.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.btn-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-cyan:hover {
+    background: var(--cyan-hover);
+}
+
+.btn-cyan span {
+    color: var(--cyan-300);
+}
+
+.btn-purple:hover {
+    background: var(--purple-hover);
+}
+
+#sub-section {
+    padding: 0 3.2rem;
+}
+
+#img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+.img-group {
+    height: 14.4rem;
+    border-radius: 10px;
+}
+
+#statement {
+    color: var(--cyan-600);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+#icon-container {
+    margin-top: 3.4rem;
+    position: relative;
+    top: 3rem; 
+}
+
+footer {
+    background: url(../images/mobile/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+#footer-content {
+    background: rgba(77, 150, 168, 0.90);
+    padding: 0 3.2rem;
+}
+
+#footer-content h2 {
+    padding-top: 6.85rem;
+    color: var(--white);
+}
+
+#footer-content button {
+    background: rgba(132, 94, 176, 0.80);
+    margin-bottom: 6.4rem;
+}
+
+.btn-purple span {
+    color: var(--purple-300);
+}
+
+/* Media Query - xs mobiles */
+@media screen and (max-width: 400px) {
+    .hero-image {
+        height: 10rem;
+    }
+
+    #img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-right, .grid-left {
+        justify-self: center;
+    }
 }

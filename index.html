@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Frontend Mentor | Meet landing page</title>
     <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hellooooooo</h1>
+    <header>
+        <div id="logo-container" class="flex">
+            <img src="./images/logo.svg" alt="Company Logo">
+        </div>
+    </header>
+    <section>
+        <div class="flex">
+            <img class="hero-image hero-left" src="./images/tablet/image-hero.png" alt="User profile images">
+        </div>
+        <main id="content">
+            <h1 class="header">Group Chat for Everyone</h1>
+            <p class="mt24 mb24">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+            <div class="btn-container flex">
+                <button class="btn btn-cyan mb16">Download <span>v1.3</span></button>
+                <button class="btn btn-purple btn-small">What is it?</button>
+            </div>
+        </main>
+        <div class="flex">
+            <img class="hero-right" src="./images/desktop/image-hero-right.png" alt="User profile images">
+        </div>
+    </section>
+    <div class="number-icon mb64">
+        <div class="vertical-line"></div>
+        <div class="numbered-circle">01</div>
+    </div>
+    <section id="sub-section">
+        <div id="img-container">
+            <img class="img-group grid-right" src="./images/desktop/image-woman-in-videocall.jpg" alt="People enjoying our app">
+            <img class="img-group grid-left" src="./images/desktop/image-women-videochatting.jpg" alt="People enjoying our app">
+            <img class="img-group grid-right" src="./images/desktop/image-men-in-meeting.jpg" alt="People enjoying our app">
+            <img class="img-group grid-left" src="./images/desktop/image-man-texting.jpg" alt="People enjoying our app">
+        </div>
+        <p id="statement" class="mt64 mb16">Built for modern use</p>
+        <h2 class="header mb32">Smarter meetings, all in one place</h2>
+        <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+    </section>
+    <div id="icon-container">
+        <div  class="number-icon"></div>
+            <div class="vertical-line"></div>
+            <div class="numbered-circle">02</div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-content">
+            <h2 class="header">Experience more together</h2>
+            <p class="mt24 mb24">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+            <button class="btn btn-purple">Download <span>v1.3</span></button>
+        </div>
+    </footer>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
