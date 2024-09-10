@@ -222,3 +222,18 @@ footer {
 .btn-purple span {
     color: var(--purple-300);
 }
+
+/* Media Query - xs mobiles */
+@media screen and (max-width: 400px) {
+    .hero-image {
+        height: 10rem;
+    }
+
+    #img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-right, .grid-left {
+        justify-self: center;
+    }
+}
