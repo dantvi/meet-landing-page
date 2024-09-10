@@ -98,6 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--white);
 }
 
 .grid-right {
@@ -189,4 +190,35 @@ h1 {
 
 h2 {
     font-size: 3.2rem;
+}
+
+#icon-container {
+    margin-top: 3.4rem;
+    position: relative;
+    top: 3rem; 
+}
+
+footer {
+    background: url(../images/mobile/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+#footer-content {
+    background: rgba(77, 150, 168, 0.90);
+}
+
+#footer-content h2 {
+    padding-top: 6.85rem;
+    color: var(--white);
+}
+
+#footer-content button {
+    background: rgba(132, 94, 176, 0.80);
+    margin-bottom: 6.4rem;
+}
+
+.btn-purple span {
+    color: var(--purple-300);
 }
