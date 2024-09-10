@@ -284,8 +284,17 @@ footer {
         padding: 0 3rem;
     }
 
+    footer {
+        background: url(../images/tablet/image-footer.jpg);
+    }
+
     #footer-content p {
         max-width: 50rem;
         margin: 2.4rem auto;
     }
+}
+
+/* Media Query - Desktop */
+@media screen and (min-width: 960px) {
+
 }
