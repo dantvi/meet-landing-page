@@ -296,8 +296,34 @@ footer {
     }
 }
 
-/* Media Query - Desktop */
-@media screen and (min-width: 960px) {
+/* Media Query - Large Desktop */
+@media screen and (min-width: 1200px) {
+    #logo-container {
+        margin-top: 8rem;
+    }
 
+    #top-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    #hero-left-container, #hero-right-container {
+        display: block;
+    }
+
+    .hero-left {
+        content: url(../images/desktop/image-hero-left.png);
+    }
+
+    .hero-right {
+        display: inline;
+        margin-top: 5.7rem;
+    }
+
+    #content {
+        margin: 2.3rem 0 14.3rem 0;
+        max-width: 44.8rem;
+    }
 }
 
