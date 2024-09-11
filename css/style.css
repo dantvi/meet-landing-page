@@ -286,6 +286,8 @@ footer {
 
     footer {
         background: url(../images/tablet/image-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #footer-content p {
@@ -298,3 +300,4 @@ footer {
 @media screen and (min-width: 960px) {
 
 }
+
