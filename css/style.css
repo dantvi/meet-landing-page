@@ -340,13 +340,36 @@ footer {
         gap: 3.2rem;
     }
 
+    #icon-container {
+        margin-top: 4.2rem;
+    }
 
-
-    
     footer {
         background: url(../images/desktop/image-footer.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
-}
 
+    #footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        height: 31.2rem;
+        text-align: left;
+    }
+
+    #footer-content .header {
+        padding: 0;
+        max-width: 30rem;
+    }
+
+    #footer-content p {
+        margin: 0;
+        max-width: 30rem;
+    }
+
+    #footer-btn {
+        margin-bottom: 0.5rem;
+    }
+}
