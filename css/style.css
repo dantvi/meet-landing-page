@@ -215,9 +215,13 @@ footer {
     color: var(--white);
 }
 
-#footer-content button {
-    background: rgba(132, 94, 176, 0.80);
+#footer-btn {
+    background: rgba(132, 94, 176, 0.8);
     margin-bottom: 6.4rem;
+}
+
+#footer-btn:hover {
+    background: rgba(178, 140, 222, 0.8);
 }
 
 .btn-purple span {
@@ -324,6 +328,19 @@ footer {
     #content {
         margin: 2.3rem 0 14.3rem 0;
         max-width: 44.8rem;
+    }
+
+    /* Byt ut bilderna till desktop versionen! */
+
+
+
+
+
+    
+    footer {
+        background: url(../images/desktop/image-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
