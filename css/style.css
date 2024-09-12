@@ -330,6 +330,10 @@ footer {
         max-width: 44.8rem;
     }
 
+    #content h1 {
+        font-size: 6.4rem;
+    }
+
     #img-container {
         max-width: 112rem;
     }
@@ -338,6 +342,10 @@ footer {
         width: 25.6rem;
         height: 25.6rem;
         gap: 3.2rem;
+    }
+
+    .info-container h2 {
+        font-size: 4rem;
     }
 
     #icon-container {
