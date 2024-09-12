@@ -215,9 +215,13 @@ footer {
     color: var(--white);
 }
 
-#footer-content button {
-    background: rgba(132, 94, 176, 0.80);
+#footer-btn {
+    background: rgba(132, 94, 176, 0.8);
     margin-bottom: 6.4rem;
+}
+
+#footer-btn:hover {
+    background: rgba(178, 140, 222, 0.8);
 }
 
 .btn-purple span {
@@ -284,8 +288,88 @@ footer {
         padding: 0 3rem;
     }
 
+    footer {
+        background: url(../images/tablet/image-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     #footer-content p {
         max-width: 50rem;
         margin: 2.4rem auto;
+    }
+}
+
+/* Media Query - Large Desktop */
+@media screen and (min-width: 1200px) {
+    #logo-container {
+        margin-top: 8rem;
+    }
+
+    #top-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    #hero-left-container, #hero-right-container {
+        display: block;
+    }
+
+    .hero-left {
+        content: url(../images/desktop/image-hero-left.png);
+    }
+
+    .hero-right {
+        display: inline;
+        margin-top: 5.7rem;
+    }
+
+    #content {
+        margin: 2.3rem 0 14.3rem 0;
+        max-width: 44.8rem;
+    }
+
+    #img-container {
+        max-width: 112rem;
+    }
+
+    .img-group {
+        width: 25.6rem;
+        height: 25.6rem;
+        gap: 3.2rem;
+    }
+
+    #icon-container {
+        margin-top: 4.2rem;
+    }
+
+    footer {
+        background: url(../images/desktop/image-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        height: 31.2rem;
+        text-align: left;
+    }
+
+    #footer-content .header {
+        padding: 0;
+        max-width: 30rem;
+    }
+
+    #footer-content p {
+        margin: 0;
+        max-width: 30rem;
+    }
+
+    #footer-btn {
+        margin-bottom: 0.5rem;
     }
 }
