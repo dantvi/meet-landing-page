@@ -330,9 +330,15 @@ footer {
         max-width: 44.8rem;
     }
 
-    /* Byt ut bilderna till desktop versionen! */
+    #img-container {
+        max-width: 112rem;
+    }
 
-
+    .img-group {
+        width: 25.6rem;
+        height: 25.6rem;
+        gap: 3.2rem;
+    }
 
 
 
